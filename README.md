@@ -15,10 +15,9 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+
+### Where to visit the demo
 ```
-npm run lint
+    http://water-i-ching.club/
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
