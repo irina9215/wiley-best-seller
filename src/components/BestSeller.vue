@@ -126,4 +126,16 @@ a {
   font-size: 28px;
   font-weight: 700;
 }
+.view-more-btn {
+  width: 100px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 15px;
+  box-sizing: content-box;
+  background: #fff;
+  color: #55b4bd;
+  border: 1px solid #55b4bd;
+  margin-left: -60%;
+  margin-bottom: 100px;
+}
 </style>
