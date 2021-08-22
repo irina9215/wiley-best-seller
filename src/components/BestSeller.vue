@@ -13,9 +13,15 @@
       <li v-for="(book, index) in state.bookList" :key="book.title">
         <div class="book-item" v-if="index < state.presentLength">
           <span class="book-item-num">{{index + 1}}.</span>
-          <img class="book-item-image" :src="book.book_image" />
+          <a :href="book.amazon_product_url">
+            <img class="book-item-image" :src="book.book_image" />
+          </a>
           <div class="book-item-info">
-            <p class="book-item-info__title">{{book.title}}</p>
+            <p class="book-item-info__title">
+              <a :href="book.book_review_link">
+                {{book.title}}
+              </a>
+            </p>
             <p class="book-item-info__author">{{book.contributor}}</p>
             <p class="book-item-info__description">{{book.description}}</p>
             <p class="book-item-primary_isbn10">ISBN: {{book.primary_isbn10}}</p>
@@ -134,8 +140,12 @@ a {
   box-sizing: content-box;
   background: #fff;
   color: #55b4bd;
-  border: 1px solid #55b4bd;
+  border: 1px solid #42b983;
   margin-left: -60%;
   margin-bottom: 100px;
+}
+a {
+    text-decoration: none;
+    color: #000
 }
 </style>
